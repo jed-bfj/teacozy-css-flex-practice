@@ -1,0 +1,153 @@
+* {
+    box-sizing:border-box;
+    font-family:Helvetica;
+    font-size:22px;
+    color:seashell;
+    background-color:black;
+    opacity:0.9;
+    text-align:center;
+}
+
+#nav {
+    position:fixed;
+    top:0;
+    border-bottom:1px solid seashell;
+    height:69px;
+    width:100%;
+    z-index:1000;
+    opacity:1.0;
+}
+
+#nav-contents{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#nav-left img{
+    float:left;
+    padding-left: 10px;
+    height:50px;
+    z-index:1;
+}
+
+#nav-right {
+    float:right;
+    list-style:none;
+    padding-right:10px;
+    margin-right:10px;
+}
+
+#nav-right li{
+    display:inline-block;
+    text-decoration:underline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#mission {
+    padding-top: 69px;
+    margin-top:69px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mission-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#mission img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#mission-text {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+#featured-tea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tea-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content:center;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between tea containers */
+    width: 100%; /* Ensure the container covers the full width */
+    max-width: 1200px; /* Set a max-width to control container width */
+}
+
+.tea-container {
+    width: calc(33.333% - 20px); /* Calculate container width based on desired columns */
+    position: relative;
+    overflow: hidden;
+}
+
+.tea-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tea-container h4 {
+    text-align: center;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+#locations{
+    height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+
+}
+
+#locations img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#locations-box {
+    display: flex;
+    justify-content: center;
+}
+
+.locations-text {
+    width: 300px;
+    margin-left: 15px; /* Half of the space between elements */
+    margin-right: 15px; /* Half of the space between elements */
+    flex-shrink: 0; /* Prevents the item from shrinking */
+}
+/* The first and last items shouldn't have left and right margins */
+.locations-text:first-child {
+    margin-left: 0;
+}
+.locations-text:last-child {
+    margin-right: 0;
+}
+footer #footer-text{
+    position:absolute;
+    text-align:left;
+}
